@@ -1,21 +1,27 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Boggle</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Boggle</title>
 </head>
-    <h1> BOGGLE GAME! </h1>
+<h1> BOGGLE GAME! </h1>
+
 <body>
-   {% for row in board %} 
-       <br>{{row}} 
-   {% endfor %}
-    <br>
-    <form>
-        <br><input type="text" name="response">
-        <br><input type="submit" value="Submit">
-    </form>
-    <script src="/static/app.js"></script>
+  {% for row in board %}
+  <br>{{row}}
+  {% endfor %}
+  <br>
+  <form action="/guess" id="input-form" method="POST">
+    <br><input type="text" name="response" class="input-guess">
+    <br><input type="submit" value="Submit">
+  </form>
+  <script src="https://code.jquery.com/jquery-3.4.1.js" integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
+    crossorigin="anonymous"></script>
+  <script src="https://unpkg.com/axios/dist/axios.js"></script>
+  <script src="/static/app.js"></script>
 </body>
+
 </html>
