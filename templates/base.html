@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Boggle</title>
+</head>
+    <h1> BOGGLE GAME! </h1>
+<body>
+   {% for row in board %} 
+       <br>{{row}} 
+   {% endfor %}
+    <br>
+    <form>
+        <br><input type="text" name="response">
+        <br><input type="submit" value="Submit">
+    </form>
+    <script src="/static/app.js"></script>
+</body>
+</html>

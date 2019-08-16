@@ -19,6 +19,7 @@ class Boggle():
         return words
 
     def make_board(self):
+        
         """Make and return a random boggle board."""
 
         board = []
